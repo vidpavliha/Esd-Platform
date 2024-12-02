@@ -30,10 +30,15 @@
     <div id="register-form" class="form" style="display:none;">
         <h2>Register</h2>
         <form>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
             <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" required><br><br>
+
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
+            <input type="password" id="password" name="password" required><br><br>
+
             <button type="submit">Register</button>
         </form>
         <button onclick="toggleRegisterForm()">Close</button>

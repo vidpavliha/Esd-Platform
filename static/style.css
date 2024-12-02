@@ -17,55 +17,16 @@ button {
     border: none;
     background-color: #007B9E;
     color: white;
-    transition: background-color 0.3s ease; /* Fade effect on hover */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-/* Positioning buttons in the top-right corner */
-#login-btn, #register-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#register-btn {
-    top: 80px;  /* Adjust this to fit below the Login button */
-}
-
-/* Positioning the welcome message in the top-left corner */
-h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    margin: 0;
-}
-
-/* Adding space between the two <h1> elements */
-h1 + h1 {
-    margin-top: 40px;
-}
-
-/* Style for headings */
-h2 {
-    color: #555;
-    margin-top: 80px;
-}
-
-/* For the host server button */
-#host-server-btn {
-    background-color: #008CBA;
-}
-
-#host-server-btn:hover {
-    background-color: #007B9E;
-}
-
 /* Common form styles */
 .form {
-    display: none;
+    display: none; /* Initially hide the forms */
     background-color: white;
     padding: 20px;
     margin-top: 50px;
@@ -74,10 +35,19 @@ h2 {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    opacity: 0;  /* Start with 0 opacity */
+    transition: opacity 0.5s ease-in-out;  /* Fade effect */
+}
+
+/* Show form with fade-in effect */
+.form.show {
+    display: block;
+    opacity: 1;  /* Fade-in to full opacity */
 }
 
 /* Input fields */
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     padding: 8px;
     margin: 5px 0;
     width: 100%;

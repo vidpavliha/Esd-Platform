@@ -1,23 +1,29 @@
-// Function to toggle visibility of the register form
+// Function to toggle the display of forms with fade effect
+function toggleForm(formId) {
+    // Hide all forms first
+    let forms = document.querySelectorAll('.form');
+    forms.forEach(function(form) {
+        form.classList.remove('show'); // Hide form by removing "show" class
+    });
+
+    // Show the selected form with fade effect
+    let selectedForm = document.getElementById(formId);
+    selectedForm.classList.add('show'); // Show selected form with "show" class
+}
+
+// Example functions for toggling forms
 function toggleRegisterForm() {
-    const form = document.getElementById('register-form');
-    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    toggleForm('register-form');
 }
 
-// Function to toggle visibility of the login form
 function toggleLoginForm() {
-    const form = document.getElementById('login-form');
-    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    toggleForm('login-form');
 }
 
-// Function to toggle visibility of the host server form
 function toggleHostServerForm() {
-    const form = document.getElementById('host-server-form');
-    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    toggleForm('host-server-form');
 }
 
-// Function to toggle visibility of the server ID form
 function toggleServerIdForm() {
-    const form = document.getElementById('server-id-form');
-    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    toggleForm('server-id-form');
 }
