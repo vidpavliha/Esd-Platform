@@ -9,25 +9,22 @@
     <script src="/static/script.js"></script>
 </head>
 <body>
-    <!-- Buttons -->
+    <!-- Login and Register buttons in the top-right corner -->
     <button id="register-btn" onclick="toggleRegisterForm()">Register</button>
     <br>
-
     <button id="login-btn" onclick="toggleLoginForm()">Login</button>
     <br>
 
     <h1>Esd platform.</h1>
     <h1>Host your own server with us. Esd.</h1>
     <h2>Select your option below:</h2>
-
     <button id="host-server-btn" onclick="toggleHostServerForm()">Host your server now!</button>
     <br>
-
     <button id="server-id-btn" onclick="toggleServerIdForm()">If you own your server, enter your server ID to see the server dashboard</button>
     <br>
 
     <!-- Forms -->
-    <div id="register-form" class="form" style="display:none;">
+    <div id="register-form" class="form">
         <h2>Register</h2>
         <form>
             <label for="email">Email:</label><br>
@@ -44,7 +41,7 @@
         <button onclick="toggleRegisterForm()">Close</button>
     </div>
 
-    <div id="login-form" class="form" style="display:none;">
+    <div id="login-form" class="form">
         <h2>Login</h2>
         <form>
             <label for="login-username">Username:</label><br>
@@ -56,7 +53,7 @@
         <button onclick="toggleLoginForm()">Close</button>
     </div>
 
-    <div id="host-server-form" class="form" style="display:none;">
+    <div id="host-server-form" class="form">
         <h2>Host Your Server</h2>
         <form>
             <label for="server-name">Server Name:</label><br>
@@ -66,7 +63,7 @@
         <button onclick="toggleHostServerForm()">Close</button>
     </div>
 
-    <div id="server-id-form" class="form" style="display:none;">
+    <div id="server-id-form" class="form">
         <h2>Enter Server ID</h2>
         <form>
             <label for="server-id">Server ID:</label><br>
