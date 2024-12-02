@@ -9,17 +9,67 @@
     <script src="/static/script.js"></script>
 </head>
 <body>
-    <button id="register">Register</button>
+    <!-- Buttons -->
+    <button id="register-btn" onclick="toggleRegisterForm()">Register</button>
     <br>
 
-    <button id="login">Login</button>
+    <button id="login-btn" onclick="toggleLoginForm()">Login</button>
     <br>
+
     <h1>Esd platform.</h1>
     <h1>Host your own server with us. Esd.</h1>
     <h2>Select your option below:</h2>
-    <button is="host-server">Host your server now!</button>
+
+    <button id="host-server-btn" onclick="toggleHostServerForm()">Host your server now!</button>
     <br>
-    <button>If you own  your server, enter your server ID to see the server dashboard</button>
+
+    <button id="server-id-btn" onclick="toggleServerIdForm()">If you own your server, enter your server ID to see the server dashboard</button>
     <br>
+
+    <!-- Forms -->
+    <div id="register-form" class="form" style="display:none;">
+        <h2>Register</h2>
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit">Register</button>
+        </form>
+        <button onclick="toggleRegisterForm()">Close</button>
+    </div>
+
+    <div id="login-form" class="form" style="display:none;">
+        <h2>Login</h2>
+        <form>
+            <label for="login-username">Username:</label><br>
+            <input type="text" id="login-username" name="login-username"><br>
+            <label for="login-password">Password:</label><br>
+            <input type="password" id="login-password" name="login-password"><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <button onclick="toggleLoginForm()">Close</button>
+    </div>
+
+    <div id="host-server-form" class="form" style="display:none;">
+        <h2>Host Your Server</h2>
+        <form>
+            <label for="server-name">Server Name:</label><br>
+            <input type="text" id="server-name" name="server-name"><br><br>
+            <button type="submit">Host Server</button>
+        </form>
+        <button onclick="toggleHostServerForm()">Close</button>
+    </div>
+
+    <div id="server-id-form" class="form" style="display:none;">
+        <h2>Enter Server ID</h2>
+        <form>
+            <label for="server-id">Server ID:</label><br>
+            <input type="text" id="server-id" name="server-id"><br><br>
+            <button type="submit">View Dashboard</button>
+        </form>
+        <button onclick="toggleServerIdForm()">Close</button>
+    </div>
+
 </body>
 </html>
