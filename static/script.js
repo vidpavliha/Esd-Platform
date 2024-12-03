@@ -10,6 +10,6 @@ function loadForm(formName) {
         });
 }
 
-function CallMailSending() {
-    fetch('https://www.pavliha.eu/vid/esd-platform/').then(response => response.text()).then(data => {document.getElementById('form-container').innerHTML=data;});
-}
+// function CallMailSending() {
+//     fetch('https://www.pavliha.eu/vid/esd-platform/').then(response => response.text()).then(data => {document.getElementById('form-container').innerHTML=data;});
+// }
