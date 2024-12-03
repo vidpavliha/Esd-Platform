@@ -1,3 +1,5 @@
-Esd platform server hosting.
+# Esd platform server hosting.
 
-Hosting your home servers with raspberyr pi's.
+Hosting your home servers with raspberry pi's.
+
+> We have all types of raspbery pi's!
