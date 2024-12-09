@@ -18,5 +18,28 @@
     <button onclick="loadForm('ServerLogin')">Enter Server ID</button>
 
     <div id="form-container"></div>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBOF5ouJM32ZKjb2UJokgoRDKq00589xLY",
+    authDomain: "esd-platform.firebaseapp.com",
+    projectId: "esd-platform",
+    storageBucket: "esd-platform.firebasestorage.app",
+    messagingSenderId: "470021912219",
+    appId: "1:470021912219:web:d252f2f5dbcc70562b383e",
+    measurementId: "G-QXSXVLWW4L"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
